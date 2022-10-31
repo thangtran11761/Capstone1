@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    max-width: 1440px;
+    padding-left: 231.5px;
+    padding-right: 231.5px;
+    background-color: #eaeaea;
+    height: 970px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgb(235, 228, 228);
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.title-header {
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 23px;
+}
+button {
+    margin: 8px;
+    height: 45px;
+    top: 0px;
+    left: 0px;
+    padding: 12px 20px;
+    align-items: center;
+    border-color: transparent;
+    border-radius: 5px;
+    background-color: #f48023;
+}
+.header-left {
+    margin-left: 30px;
+}
+.header-right {
+    margin-right: 40px;
+}
+.register {
+    color: #fff;
+    font-weight: bold;
+}
+.login {
+    color: #1682fd;
+    font-weight: bold;
+}
+.button-login {
+    background-color: #eaeaea;
+}
+
+/*  */
+
+.side-bar {
+    width: 310px;
+    height: 816px;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    /* position: relative; */
+    align-items: flex-start;
+    border-color: transparent;
+    background-color: #fff;
+}
+.menu {
+    padding-top: 30px;
+}
+.search {
+    padding: 20px 0 20px 20px;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+}
+.search img {
+    padding-right: 20px;
+}
+.noti {
+    padding: 20px 15px 15px 15px;
+}
+.person {
+    padding-top: 30px;
+}   

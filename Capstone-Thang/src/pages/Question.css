@@ -1,0 +1,11 @@
+.nav-question {
+    width: 400px;
+    background-color: #FFF;
+    margin: 20px 50px;
+    padding: 25px 25px 5px 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #ccc, 2px -2px #ccc;
+}
+.nav-question p {
+    margin: 10px 0;
+}
