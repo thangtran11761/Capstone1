@@ -57,11 +57,23 @@ function GetNotification() {
 }
 
 function ShowNotification() {
-
+    const [noti, setNoti] = useState([])
+    const apiNotiShow= 'https://jsonplaceholder.typicode.com/Notifications/id';
+    useEffect(() => {
+        fetch(apiNotiShow)
+   2         .then (response => response.json())
+            .then(json => {
+                setNoti(json)
+            })
+            .catch(error => console.log('error',error));
+    },[])
+    return (
+        <div></div>
+    )
 }
 
 function checkOnOffNavNoti() {
-    
+
 }
 
 function Notification () {
