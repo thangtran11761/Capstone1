@@ -38,8 +38,8 @@ table {
   }
 
   .content {
-    width: calc(100% - 300px);
-    background-color: #EAEAEA;
+    width: calc(100% - 300px); 
+    background-color: #f0f2f5;
     position: absolute;
     left: 300px;
   } 

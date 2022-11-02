@@ -16,31 +16,20 @@ function Question () {
             .catch(error => console.log('error',error));
     },[])
 
-    // const [users, setUsers] = useState([])
-    // const apiUser = 'https://jsonplaceholder.typicode.com/users';
-    // useEffect(() => {
-    //     fetch(apiUser)
-    //         .then (response => response.json())
-    //         .then(json => {
-    //             setUsers(json)
-    //         })
-    //         .catch(error => console.log('error',error));
-    // },[])
-    
-
     return (
         posts.map((post) => {
             return (
-                <div className='nav-question'>
-                    <div className='infoUser'>
-                        <p></p>
+                <div className='nav-question' key={post.id}>
+                    <div className='infoUser' key={post.userId}>
+                        <img src={post.url}></img>
+                        <p>{post.userName}</p>
                     </div>
                     <div className='infoQuestion'>
                         <p>{post.title}</p>
                         <p>{post.body}</p>
                     </div>
                     <div className='footerQuestion'>
-                        <p></p>
+                        <p>{post.liked}</p>
                     </div>
                 </div>
             )

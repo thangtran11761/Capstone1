@@ -27,7 +27,8 @@ code {
     background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid rgb(235, 228, 228);
     position: fixed;
-    width: 1349px;
+    width: 1366px;
+    z-index: 1;
   }
   .logo {
     display: flex;
@@ -38,7 +39,7 @@ code {
     font-weight: 700;
     font-size: 23px;
   }
-  button {
+  .header .header-right button {
     margin: 8px;
     height: 45px;
     top: 0px;

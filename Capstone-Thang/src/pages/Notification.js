@@ -1,6 +1,7 @@
 import React from 'react'
+import {useEffect, useState} from 'react'
 import './Notification.css'
-const lists = [
+const notisDemo = [
     {
         idNoti: 1,
         userName: 'Thang',
@@ -26,21 +27,51 @@ const lists = [
         content: 'a',
     }
 ]
-function Notification () {
+
+function GetNotification() {
+    const [notis, setNotis] = useState([])
+    const apiNoti= 'https://jsonplaceholder.typicode.com/posts/comments';
+    useEffect(() => {
+        fetch(apiNoti)
+            .then (response => response.json())
+            .then(json => {
+                setNotis(json)
+            })
+            .catch(error => console.log('error',error));
+    },[])
     return (
-        lists.map((list) => {
+        notisDemo.map((noti) => {
             return (
-                <div className='nav-noti'>
+                <div className='nav-noti' key={noti.idNoti}>
                     <div className='infoUser'>
-                        <p>{list.userName}</p>
+                        <p>{noti.userName}</p>
                     </div>
                     <div className='infoNoti'>
-                        <p>{list.title}</p>
-                        <p>{list.content}</p>
+                        <p>{noti.title}</p>
+                        <p>{noti.content}</p>
                     </div>
                 </div>
             )
         })
+    )
+}
+
+function ShowNotification() {
+
+}
+
+function checkOnOffNavNoti() {
+    
+}
+
+function Notification () {
+    return (
+        <div className='noti'>
+            <div className='main-noti-show'>
+                <GetNotification/>
+            </div>
+            <div className='nav-noti-show'></div>
+        </div>
     )
 }
 
