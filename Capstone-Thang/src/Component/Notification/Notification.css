@@ -1,0 +1,27 @@
+.noti-box {
+    width: 100%;
+    background-color: #FFF; 
+    display: flex;
+    padding-right: 66px;
+    
+}
+
+.noti-box .nav-noti-left {
+    width: 400px;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+    
+}
+
+.noti-box .nav-noti-left > * {
+  padding: 10px ;
+}
+
+.noti-box .nav-noti-left .nav-noti:hover {
+  cursor: pointer;
+ 
+}
+
+.noti-box .nav-noti-right {
+  width: 600px;
+}

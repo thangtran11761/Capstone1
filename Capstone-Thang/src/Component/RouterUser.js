@@ -1,10 +1,11 @@
 import { Routes, Route} from 'react-router-dom'
-import Forum from './Forum'
-import Notification from './Notification'
-import News from './Newz'
-import Question from './Question'
-import Chat from './Chat'
-import Celendar from './Celendar'
+import Forum from '../Component/Forum'
+import Notification from '../Component/Notification/Notification'
+import News from '../Component/Newz'
+import Question from '../Component/Question'
+import Chat from '../Component/Chat'
+import Celendar from '../Component/Celendar'
+import Form from '../Component/Form/Form'
 
 
 function RouterUser() {
@@ -16,6 +17,7 @@ function RouterUser() {
             <Route  path="/Celendar" element={<Celendar/>} />
             <Route  path="/Question" element={<Question/>} />
             <Route  path="/Chat" element={<Chat/>} />
+            <Route  path="/Form" element={<Form/>}/ >
         </Routes>
     )
 }

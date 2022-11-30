@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {useEffect, useState} from 'react'
-import './Question.css'
+import '../Assets/Style/Question.css'
 
 function Question () {
 

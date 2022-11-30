@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {useEffect, useState} from 'react'
-import './News.css'
+import '../Assets/Style/News.css'
 
 const newsDemo = [
     {

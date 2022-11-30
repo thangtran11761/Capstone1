@@ -1,19 +1,21 @@
 
 import './App.css';
-
-import SidebarUser from './pages/SidebarUser'
-import RouterUser from './pages/RouterUser';
+import { BrowserRouter as Router } from 'react-router-dom'
+import Header from './Layouts/Header';
+import Main from './Layouts/Main';
+import Footer from './Layouts/Footer';
 
 function App() {
 
   return (
+    <Router>
       <div className='app'>
-        <SidebarUser/>
-        <div className='content'>  
-            <RouterUser/> 
-        </div>
-
+        <Header/>
+        <Main/>
+        <Footer/>
       </div>
+    </Router>
+      
   )
 }
 

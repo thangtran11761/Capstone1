@@ -1,0 +1,20 @@
+
+.form {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 33px;
+    background-color: #fff;
+}
+.form .app-form {
+    width: 100%;
+    display: flex;
+    
+}
+
+.form .app-form .form-sidebar {
+    width: 200px;
+}
+
+.form .app-form .form-content {
+    width: 800px;
+}

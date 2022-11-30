@@ -1,0 +1,97 @@
+.side-bar {
+  width: 300px;
+  height: 816px;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+  /* position: relative; */
+  align-items: flex-start;
+  border-color: transparent;
+  background-color: #fff;
+  box-sizing: border-box;
+  position: fixed;
+  border-right: 1px solid #ccc
+}
+.search {
+  width: 100%;
+  padding: 10px 30px;
+  margin-top: 30px;
+  font-weight: 550;
+  display: flex;
+  height: 50px;
+  line-height:30px ;
+  box-sizing: border-box;
+}
+.search input {
+  border: none;
+  outline: none;
+  border-radius: 10px ;
+  box-shadow: 2px 2px #EAEAEA;
+  padding: 0 10px;
+  width: 100%;
+  height: 30px;
+}
+.search svg {
+  margin-right: 12px;
+  width: 30px;
+  height: 30px;
+}
+.menu {
+  width: 100%;
+  margin-top: 30px;
+}
+.menu i {
+  margin-right: 10px;
+}
+h2 {
+  /* color: #f48023; */
+  color: #000;
+  font-weight: 600;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+.person {
+  width: 100%;
+  margin-top: 30px;
+}
+.person p {
+  padding: 10px 30px;
+}
+
+.person i {
+  margin-right: 10px;
+}
+.link:hover {
+  background-color: #FCF4EC;
+  Cursor: pointer;
+}
+.link:focus {
+  background-color: #f48023;
+  color: #fff;
+}
+.link:focus svg path {
+  fill: #fff;
+}
+.link {
+  display: block;
+  text-decoration: none;
+  padding: 10px 30px;
+  line-height: 30px;
+  display: flex;
+  font-size: 18px;
+}
+.link.noti {
+  box-sizing: border-box;
+}
+.link p {
+  padding: 0;
+  color: #000;
+}
+svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+svg path {
+  fill: #f48023;
+}
